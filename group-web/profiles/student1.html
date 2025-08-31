@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>student 2 — Profile</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* Make logo scroll horizontally */
+    .logo-scroll {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .logo-scroll img {
+      display: inline-block;
+      height: 60px;
+      animation: scroll-logo 10s linear infinite;
+    }
+    @keyframes scroll-logo {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    /* Profile image styling */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #0ea5e9; /* theme blue */
+      box-shadow: 0 0 12px rgba(14,165,233,0.6);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-frame logo-scroll">
+      <img src="https://cinutedigital.com/wp-content/uploads/2023/03/CDPL.png" alt="CDPL Logo" class="logo">
+      <h1>Our Group Project</h1>
+    </div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#profiles" class="active">Profiles</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="../index.html">Home</a> / 
+      <a href="../index.html#profiles">Profiles</a> / 
+      <strong>Rohit Kumar</strong>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="profile-header card">
+      <div class="avatar">
+        <!-- Replace with actual member photo -->
+        <img src="../assets/images/arpita.png" alt="Rohit Kumar">
+      </div>
+      <div class="profile-info">
+        <h1>Arpita Singh</h1>
+        <div class="profile-meta">
+          <p><strong>Email:</strong> <a href="mailto:rohit.arpitasingh200627@gmail.com">arpitasingh200627@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arpita-singh-1894bb314 " target="_blank" rel="noopener">View Profile</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section class="section card">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>DataBase Management : MySQL and SQL</li>
+        <li>Programming languages : C++,Java,Python</li>
+         <li>Microsoft office and excel</li>
+         
+        <li>HTML & CSS for creating and styling web pages</li>
+        <li>Communication & Teamwork </li>
+        
+        
+      </ul>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section card">
+      <h2>Certificates & Achievements</h2>
+      <ul>
+        <li>
+          <strong>Achievement:</strong>
+          Secured 2nd Prize in the Street Play Competition at Nirmala Memorial College and Sathaye College, showcasing impactful performance, teamwork, and effective communication of social themes.</li>
+        <li>Awarded Certificate of Volunteering for contributing to the College Fest as part of the Administration Team, handling permissions, official letters, and report writing.</li>
+        
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section card">
+      <h2>Projects</h2>
+      <ul>
+        <li>Mini Project in C++: Developed a console-based application (e.g., Student Management
+         System / Calculator).</li>
+        <li> Python Practice Programs: Small automation scripts and problem-solving exercises</li>
+          
+        
+      </ul>
+    </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Group Portfolio • Built for CDPL</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>student 2 — Profile</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* Make logo scroll horizontally */
+    .logo-scroll {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .logo-scroll img {
+      display: inline-block;
+      height: 60px;
+      animation: scroll-logo 10s linear infinite;
+    }
+    @keyframes scroll-logo {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    /* Profile image styling */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #0ea5e9; /* theme blue */
+      box-shadow: 0 0 12px rgba(14,165,233,0.6);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-frame logo-scroll">
+      <img src="https://cinutedigital.com/wp-content/uploads/2023/03/CDPL.png" alt="CDPL Logo" class="logo">
+      <h1>Our Group Project</h1>
+    </div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#profiles" class="active">Profiles</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="../index.html">Home</a> / 
+      <a href="../index.html#profiles">Profiles</a> / 
+      <strong>Rohit Kumar</strong>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="profile-header card">
+      <div class="avatar">
+        <!-- Replace with actual member photo -->
+        <img src="../assets/images/supriya.PNG" alt="Supriya Tiwari">
+      </div>
+      <div class="profile-info">
+        <h1>Supriya Tiwari</h1>
+        <div class="profile-meta">
+          <p><strong>Email:</strong> <a href="mailto:tiwarisupriya45935@gmail.com">tiwarisupriya45935@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/supriya-tiwari-1a29aa381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+            target="_blank" rel="noopener">View Profile</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section class="section card">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Programming Knowledge – Python, C++, and basic Java with GUI 
+          (Swing). </li>
+        <li>Database Management </li>
+        <li>Web Development Basics</li>
+        <li>Problem-Solving & Analytical Thinking</li>
+        <li>Communication & Teamwork </li>
+        <li>Creativity & Writing Skills </li>
+      </ul>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section card">
+      <h2>Certificates & Achievements</h2>
+      <ul>
+        <li> Earned C++ Programming Fundamentals Certificate through 
+          academics.</li>
+        <li>Actively participated in NSS Beach Cleanup Drive (2024)., 
+        </li>
+        <li>Recognized for Leadership & Teamwork in school and college group 
+        activities. </li>
+        <li>Achieved consistent academic performance in CBSE 10th (2022) and 
+        12th (2024). </li>
+        <li>Contributed to college technical and cultural events as an active 
+        participant </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section card">
+      <h2>Projects</h2>
+      <ul>
+        <li>DBMS Case Study (LinkedIn): Study of database usage in LinkedIn.</li>
+        <li>Data Mining Case Study (iPhone 17): Analysis of pricing trends and 
+        consumer behavior.</li>
+      </ul>
+    </section>
+
+   
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Group Portfolio • Built for CDPL</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
